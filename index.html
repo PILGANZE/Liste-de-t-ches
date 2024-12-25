@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Définition du jeu de caractères utilisé -->
+    <meta charset="UTF-8">
+    
+        <!-- Balise pour le SEO. -->
+<meta name="author" content="Équipe PILGANZE">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Bienvenu sur notre site. Nous vous proposons une liste de tâches gratuite et en ligne .">
+
+
+    <!-- Rendre la page compatible avec les appareils mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre affiché dans l'onglet du navigateur -->
+    <title>Bonjour</title>
+    
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="Crayon.css">
+    
+    <!-- Lien vers le fichier JavaScript avec defer pour garantir le chargement après le DOM -->
+    <script src="Back.js" defer></script>
+</head>
+<body>
+    <!-- Section principale contenant l'application de liste de tâches -->
+    <section>
+        
+        <!-- Titre principal de la page -->
+        <h1>Liste de tâches.</h1>
+        
+        <!-- Conteneur principal pour l'application -->
+        <div class="container">
+            
+            <!-- Sous-conteneur pour l'entrée et le bouton -->
+            <div class="full_input">
+                
+                <!-- Champ d'entrée pour saisir une nouvelle tâche -->
+                <input type="text" placeholder="Ajouter une tâche..." id="inputfield">
+                
+                <!-- Bouton pour ajouter une tâche -->
+                <button id="addTodo">+</button>
+            </div>
+            
+            <!-- Conteneur où les tâches seront affichées -->
+            <div id="toDoContainer">
+                <!-- Les tâches seront insérées ici dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </section>  
+</body>
+</html>

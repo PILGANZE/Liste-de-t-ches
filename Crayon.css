@@ -1,0 +1,85 @@
+/* Appliquer des styles par défaut à tous les éléments */
+* {
+    margin: 0px; /* Supprimer les marges par défaut */
+    padding: 0px; /* Supprimer les espacements internes par défaut */
+    box-sizing: border-box; /* Inclure les bordures et le padding dans les dimensions */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Définir la police par défaut */
+}
+
+/* Styles pour le corps de la page */
+body {
+    background: #16A085;  /* solution de repli pour les anciens navigateurs */
+    background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: flex; /* Utiliser Flexbox pour centrer les éléments */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+    justify-content: center; /* Aligner les éléments horizontalement au centre */
+    min-height: 100vh; /* Hauteur minimale égale à la hauteur de la fenêtre */
+}
+
+/* Styles pour la section principale */
+section {
+    background-color: white; /* Couleur de fond de la section */
+    padding: 10px; /* Espacement interne */
+    width: 450px; /* Largeur fixe de la section */
+    border-radius: 6px; /* Coins arrondis */
+    box-shadow: 0 0 10px black; /* Ombre pour donner un effet de relief */
+}
+
+/* Styles pour le titre (h1) */
+h1 {
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+/* Conteneur pour l'entrée et le bouton */
+.full_input {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments */
+    align-items: center; /* Centrer verticalement l'entrée et le bouton */
+    justify-content: space-between; /* Espacer les éléments de manière uniforme */
+}
+
+/* Styles pour le champ d'entrée */
+input {
+    width: 90%; /* Occuper 90% de la largeur du conteneur */
+    padding: 10px 5px; /* Espacement interne */
+    height: 39px; /* Hauteur fixe */
+    border: 1px solid silver; /* Bordure fine et grise */
+    outline: 0; /* Supprimer le contour bleu par défaut au focus */
+    border-radius: 6px 0 0 6px; /* Coins arrondis à gauche uniquement */
+}
+
+/* Styles pour le bouton */
+button {
+    width: 10%; /* Occuper 10% de la largeur du conteneur */
+    font-size: 18px; /* Taille de la police */
+    height: 39px; /* Même hauteur que l'entrée pour un alignement parfait */
+    border: 0; /* Supprimer les bordures */
+    color: white; /* Texte blanc */
+    background-color: #614e1a ; /* Fond  */
+    border-radius: 0 6px 6px 0; /* Coins arrondis à droite uniquement */
+}
+
+/* Styles pour les paragraphes des tâches */
+.paragraphe_style {
+    margin: 10px 0; /* Espacement vertical entre les tâches */
+    padding: 10px 0; /* Espacement interne vertical */
+    padding-left: 5px; /* Espacement interne à gauche */
+    border-radius: 6px; /* Coins arrondis */
+    color: white; /* Texte blanc */
+    background-color: blue; /* Fond bleu */
+}
+
+/* Effet au survol des tâches */
+.paragraphe_style:hover {
+    background-color: red; /* Changer la couleur de fond au survol */
+    transform: scale(1.03); /* Augmenter légèrement la taille au survol */
+}
+
+/* Animation définie avec @keyframes */
+@keyframes anime {
+    from {
+        transform: translateY(50px); /* Départ avec une translation verticale */
+    }
+    /* Aucun "to" défini ici, mais cela revient à l'état initial (position normale) */
+}
